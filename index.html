@@ -258,26 +258,26 @@
           <div class="cv-section-title">Details</div>
           <div class="cv-detail-item">${address || 'Siliguri, West Bengal'}</div>
           <div class="cv-detail-item">${getValue('country') || 'India'}</div>
-          <div class="cv-detail-item">${getValue('phone') || '88XXXXXXXXX'}</div>
-          <div class="cv-detail-item">${getValue('email') || 'ritiXXXXXXXX@gmail.com'}</div>
+          <div class="cv-detail-item">${getValue('phone') || ''}</div>
+          <div class="cv-detail-item">${getValue('email') || ''}</div>
           
           <div class="cv-section-title">Skills</div>
-          <div class="cv-detail-item">${getValue('skill1') || 'C++'}</div>
+          <div class="cv-detail-item">${getValue('skill1') || ''}</div>
           <div class="cv-skills-bar" style="--skill-level: ${getValue('skill1Level') || '80'}%"></div>
           
-          <div class="cv-detail-item">${getValue('skill2') || 'Python'}</div>
+          <div class="cv-detail-item">${getValue('skill2') || ''}</div>
           <div class="cv-skills-bar" style="--skill-level: ${getValue('skill2Level') || '70'}%"></div>
           
-          <div class="cv-detail-item">${getValue('skill3') || 'Java(Basic)'}</div>
+          <div class="cv-detail-item">${getValue('skill3') || ''}</div>
           <div class="cv-skills-bar" style="--skill-level: ${getValue('skill3Level') || '60'}%"></div>
           
           <div class="cv-section-title">Hobbies</div>
-          <div class="cv-detail-item">${getValue('hobbies') || 'Sketching, Music, Travelling'}</div>
+          <div class="cv-detail-item">${getValue('hobbies') || ''}</div>
           
           <div class="cv-section-title">Languages</div>
-          <div class="cv-detail-item">${getValue('language1') || 'Hindi'}</div>
-          <div class="cv-detail-item">${getValue('language2') || 'English'}</div>
-          <div class="cv-detail-item">${getValue('language3') || 'Bengali'}</div>
+          <div class="cv-detail-item">${getValue('language1') || ''}</div>
+          <div class="cv-detail-item">${getValue('language2') || ''}</div>
+          <div class="cv-detail-item">${getValue('language3') || ''}</div>
         </div>
       `;
 
@@ -285,17 +285,17 @@
       const mainHTML = `
         <div class="cv-main">
           <div class="cv-section-main">Profile</div>
-          <p>${getValue('profile') || "I'm a curious and motivated Computer Science student, currently learning C++, Java, and Python. I enjoy building things, solving problems, and figuring out how tech works behind the scenes. While I'm still growing my skills, I'm always eager to take on new challenges and learn from real-world experiences. I work well in teams, stay calm under pressure, and genuinely enjoy the process of learning and improving. I'm looking for opportunities where I can contribute, learn from others, and become a better developer every day."}</p>
+          <p>${getValue('profile') || ""}</p>
           
           <div class="cv-section-main">Education</div>
-          <div class="cv-detail-item">${getValue('education1') || 'Upto 10th, Madhubani'}</div>
-          <div class="cv-detail-item">${getValue('education2') || 'Janta Collage, Madhubani, 12th'}</div>
-          <div class="cv-detail-item">${getValue('education3') || 'Btech Computer Science Engineering, Siliguri Institute of Technology, Siliguri'}</div>
-          <div class="cv-date">${getValue('gradDate') || 'AUGUST 2024'}</div>
+          <div class="cv-detail-item">${getValue('education1') || ''}</div>
+          <div class="cv-detail-item">${getValue('education2') || ''}</div>
+          <div class="cv-detail-item">${getValue('education3') || ''}</div>
+          <div class="cv-date">${getValue('gradDate') || ''}</div>
           
           <div class="cv-section-main">Experience</div>
-          <div class="cv-detail-item">${getValue('experience').split('\n')[0] || 'Contributed in GSSOC'}</div>
-          <div class="cv-detail-item">${getValue('experience').split('\n')[1] || '1st Runner-up in Internal SIH 2024'}</div>
+          <div class="cv-detail-item">${getValue('experience').split('\n')[0] || ''}</div>
+          <div class="cv-detail-item">${getValue('experience').split('\n')[1] || ''}</div>
         </div>
       `;
 
